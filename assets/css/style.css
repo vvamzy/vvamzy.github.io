@@ -836,8 +836,28 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+.skills-list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
 
+.skills-list li {
+  margin: 10px 0; /* Add spacing between items */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.6; /* Improve readability */
+}
+
+.skills-list li strong {
+  color: #0078D7; /* Highlight category names */
+  font-weight: bold;
+}
+
+.skills-list li:hover {
+  background-color: #f0f0f0; /* Add hover effect */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px; /* Add padding for hover effect */
+}
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
